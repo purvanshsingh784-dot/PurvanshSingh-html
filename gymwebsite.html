@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PowerFit Gym</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#111;
+}
+
+header h1{
+    color:#ff3c00;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ff3c00;
+}
+
+/* Hero Section */
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h2{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.hero span{
+    color:#ff3c00;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.hero button{
+    padding:12px 30px;
+    font-size:16px;
+    border:none;
+    background:#ff3c00;
+    color:white;
+    cursor:pointer;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    background:white;
+    color:#ff3c00;
+}
+
+/* Services */
+.services{
+    padding:60px 10%;
+    text-align:center;
+}
+
+.services h2{
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+.service-boxes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:30px;
+}
+
+.box{
+    background:#1a1a1a;
+    padding:30px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.box:hover{
+    transform:translateY(-10px);
+    background:#ff3c00;
+}
+
+/* Membership */
+.membership{
+    background:#111;
+    padding:60px 10%;
+    text-align:center;
+}
+
+.membership h2{
+    margin-bottom:40px;
+}
+
+.plans{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.plan{
+    background:#1a1a1a;
+    padding:30px;
+    border-radius:15px;
+    width:250px;
+    transition:0.3s;
+}
+
+.plan:hover{
+    transform:scale(1.05);
+}
+
+.price{
+    font-size:28px;
+    color:#ff3c00;
+    margin:15px 0;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    .hero h2{
+        font-size:35px;
+    }
+}
+/* Modal Styling */
+.modal{
+    display:none;
+    position:fixed;
+    z-index:1000;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    background:#1a1a1a;
+    padding:30px;
+    border-radius:15px;
+    width:350px;
+    text-align:center;
+    position:relative;
+}
+
+.modal-content h2{
+    margin-bottom:20px;
+}
+
+.modal-content input,
+.modal-content select{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+}
+
+.modal-content button{
+    width:100%;
+    padding:10px;
+    border:none;
+    background:#ff3c00;
+    color:white;
+    border-radius:20px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.close{
+    position:absolute;
+    right:15px;
+    top:10px;
+    font-size:22px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>PowerFit</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Programs</a>
+        <a href="#">Membership</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Build Your <span>Dream Body</span></h2>
+    <p>No excuses. Just results. Start your fitness journey today.</p>
+    <button>Join Now</button>
+</section>
+
+<section class="services">
+    <h2>Our Programs</h2>
+    <div class="service-boxes">
+        <div class="box">
+            <h3>Weight Training</h3>
+            <p>Professional strength training programs.</p>
+        </div>
+        <div class="box">
+            <h3>Cardio Training</h3>
+            <p>Burn fat and improve stamina.</p>
+        </div>
+        <div class="box">
+            <h3>Personal Trainer</h3>
+            <p>One-on-one expert coaching.</p>
+        </div>
+    </div>
+</section>
+
+<section class="membership">
+    <h2>Membership Plans</h2>
+    <div class="plans">
+        <div class="plan">
+            <h3>Basic</h3>
+            <div class="price">₹999/month</div>
+            <p>Gym Access</p>
+        </div>
+        <div class="plan">
+            <h3>Standard</h3>
+            <div class="price">₹1999/month</div>
+            <p>Gym + Cardio</p>
+        </div>
+        <div class="plan">
+            <h3>Premium</h3>
+            <div class="price">₹2999/month</div>
+            <p>All Access + Trainer</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 PowerFit Gym | All Rights Reserved
+</footer>
+<!-- Registration Modal -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Join PowerFit</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <select required>
+        <option value="">Select Plan</option>
+        <option>Basic - ₹999</option>
+        <option>Standard - ₹1999</option>
+        <option>Premium - ₹2999</option>
+      </select>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</div>
+<script>
+const modal = document.getElementById("registerModal");
+const joinBtn = document.querySelector(".hero button");
+const closeBtn = document.querySelector(".close");
+
+joinBtn.onclick = function() {
+    modal.style.display = "flex";
+}
+
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if(event.target == modal){
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
