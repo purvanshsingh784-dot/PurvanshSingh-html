@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZUDIO | Fashion for All</title>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #000;
+}
+
+.navbar h1 {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.navbar a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #f5c518;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background-image: url("https://images.unsplash.com/photo-1490481651871-ab68de25d43d");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    background-color: #f5c518;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero button:hover {
+    background-color: #fff;
+}
+
+/* Categories */
+.categories {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px;
+    font-size: 22px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1>ZUDIO</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Stores</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Fashion That Fits Your Budget</h2>
+        <p>Trendy • Affordable • Everyday Wear</p>
+        <button>Explore Collection</button>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <h2>Shop By Category</h2>
+
+        <div class="cards">
+            <div class="card">
+                <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/30220808/2024/7/16/7801b83c-49b4-434b-8dca-ffa4fde6dfbf1721089815923DeFactoMenWashedLonglineDenimJacket1.jpg" alt="Men Fashion">
+                <h3>Men</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://rukminim2.flixcart.com/image/480/580/kzhbfrk0/gown/m/w/j/18-year-l-full-sleeve-semi-stitched-fashion-g-1-zudio-fashion-40-original-imagbh2dtzharbsj.jpeg?q=90" alt="Women Fashion">
+                <h3>Women</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/91QQio34BYL._AC_SR175,263_QL70_.jpg" alt="Kids Fashion">
+                <h3>Kids</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 ZUDIO. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
