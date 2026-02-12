@@ -1,0 +1,176 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Taekwondo Training Academy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }body {
+        background: #f4f4f4;
+        color: #333;
+    }
+
+    header {
+        background: #000;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    nav {
+        background: #111;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+    }
+
+    nav a:hover {
+        color: red;
+    }
+
+    section {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .hero {
+        background: url('https://thumbs.dreamstime.com/b/martial-arts-masters-karate-practice-two-male-karate-fighting-two-male-karate-fighting-139836345.jpg') no-repeat center center/cover;
+        color: white;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero h2 {
+        font-size: 48px;
+        background: rgba(0,0,0,0.6);
+        padding: 15px 30px;
+        border-radius: 10px;
+    }
+
+    .btn {
+        margin-top: 20px;
+        padding: 12px 25px;
+        font-size: 18px;
+        border: none;
+        background: red;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: darkred;
+    }
+
+    .programs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+    }
+
+    .schedule-box {
+        background: white;
+        padding: 20px;
+        margin: 15px auto;
+        max-width: 500px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    footer {
+        background: #000;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        .hero h2 {
+            font-size: 28px;
+        }
+
+        .programs {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+
+</head>
+<body><header>
+    <h1>Elite Taekwondo Training Academy</h1>
+</header><nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#programs">Programs</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#contact">Contact</a>
+</nav><section class="hero" id="home">
+    <h2>Build Discipline. Master Technique. Unleash Confidence.</h2>
+    <button class="btn" onclick="joinNow()">Join Now</button>
+</section><section id="about">
+    <h2>About Our Academy</h2>
+    <p style="max-width:800px;margin:20px auto;">
+        Our Taekwondo academy provides professional martial arts training for kids, teens, and adults. 
+        We focus on self-defense, physical fitness, respect, and mental strength through structured programs led by certified instructors.
+    </p>
+</section><section id="programs">
+    <h2>Our Programs</h2>
+    <div class="programs">
+        <div class="card">
+            <h3>Kids Training</h3>
+            <p>Fun and disciplined classes designed to improve focus, coordination, and confidence.</p>
+        </div>
+        <div class="card">
+            <h3>Self Defense</h3>
+            <p>Practical self-defense techniques for real-life situations.</p>
+        </div>
+        <div class="card">
+            <h3>Black Belt Program</h3>
+            <p>Advanced training focused on competition and mastery.</p>
+        </div>
+    </div>
+</section><section id="schedule">
+    <h2>Training Schedule</h2>
+    <div class="schedule-box">Monday - Friday: 5:00 PM - 8:00 PM</div>
+    <div class="schedule-box">Saturday: 8:00 AM - 11:00 AM</div>
+</section><section id="contact">
+    <h2>Start Your Journey Today</h2>
+    <p>Call us at +91 98765 43210</p>
+    <button class="btn" onclick="contactUs()">Contact Us</button>
+</section><footer>
+    <p>© 2026 Elite Taekwondo Training Academy. All Rights Reserved.</p>
+</footer></body>
+</html>
